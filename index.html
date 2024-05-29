@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil Fortnite Server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fossil Fortnite Server</h1>
+        <div id="forms">
+            <form id="registerForm">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+            </form>
+
+            <form id="loginForm" style="display: none;">
+                <h2>Sign In</h2>
+                <div class="input-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Sign In</button>
+                <p>Forgot your password? <a href="#" id="showReset">Reset here</a></p>
+                <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+            </form>
+
+            <form id="resetForm" style="display: none;">
+                <h2>Reset Password</h2>
+                <div class="input-group">
+                    <label for="reset-username">Username</label>
+                    <input type="text" id="reset-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="reset-password">New Password</label>
+                    <input type="password" id="reset-password" name="password" required>
+                </div>
+                <button type="submit">Reset Password</button>
+                <p>Remembered your password? <a href="#" id="showLoginFromReset">Login here</a></p>
+            </form>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
