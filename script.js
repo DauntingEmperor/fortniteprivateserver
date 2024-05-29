@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('login-password').value;
     const message = document.getElementById('message');
 
-    fetch('https://path-to-your-json-file.json')
+    fetch('https://raw.githubusercontent.com/DauntingEmperor/fortniteprivateserver/main/login.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
