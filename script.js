@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('login-password').value;
     const message = document.getElementById('message');
 
-    fetch('https://raw.githubusercontent.com/DauntingEmperor/fortniteprivateserver/main/login.json')
+    fetch('https://path-to-your-json-file.json')
         .then(response => response.json())
         .then(users => {
             const user = users.find(user => user.username === username && user.password === password);
