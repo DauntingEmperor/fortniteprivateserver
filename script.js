@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('showLogin').addEventListener('click', function(event) {
     event.preventDefault();
     document.getElementById('registerForm').style.display = 'none';
